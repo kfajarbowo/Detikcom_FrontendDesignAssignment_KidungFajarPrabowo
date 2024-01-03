@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Responsive Glassmorphism Navbar HTML CSS JS | Codehal</title>
+		<link rel="stylesheet" href="resources/css/style.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- <div class="container"> -->
+		<header class="header-custom">
+			<a href="#" class="logo-custom">
+				<img src="resources/images/logo.png" alt="" />
+			</a>
+			<i class="bx bx-menu" id="menu-icon"></i>
+			<nav class="navbar-custom">
+				<a href="#">Home</a>
+				<a href="#">About</a>
+				<a href="#">Portfolio</a>
+				<a href="#">Services</a>
+				<a href="#">Contact</a>
+			</nav>
+		</header>
+		<!-- </div> -->
+		<div class="nav-bg"></div>
+
+		<section class="hero-section">
+			<div class="row">
+				<div class="container">
+					<!-- <div class="col-sm-12"> -->
+					<img
+						class="logo-event img-fluid"
+						src="resources/images/logo-event-2.png"
+						style="z-index: 2"
+						alt=""
+					/>
+					<a href="" class="button-custom">Tentang Acara</a>
+					<!-- </div> -->
+				</div>
+			</div>
+
+			<div class="row">
+				<!-- <div class="col-sm-12"> -->
+				<picture>
+					<source
+						media="(max-width:992px )"
+						srcset="resources/images/bg-mobile-1.png"
+						style="height: 200px"
+					/>
+					<img
+						class="hero-img"
+						src="resources/images/Hero.png"
+						style="z-index: 1"
+						alt=""
+					/>
+				</picture>
+				<!-- </div> -->
+			</div>
+		</section>
+
+		<section class="about">
+			<div class="container mt-5">
+				<div class="row mx-auto px-auto">
+					<div class="col-md-6">
+						<div class="card card-custom">
+							<div class="card-body text-white">
+								<img
+									src="resources/images/map-image.png"
+									class="card-img-top"
+									alt="..."
+								/>
+								<div class="card-title fs-1">10K FUN RUN</div>
+								<p class="card-text">
+									Dimulai pukul 6 pagi, nikmati pemandangan kota di pagi hari
+									dimulai dari Bundaran HI hingga Patung Pemuda Membangun di
+									Senayan lalu kembali lagi ke Bundaran HI!
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="row mx-auto">
+							<div class="col-md-12">
+								<div class="card card-custom">
+									<div class="card-body text-white">
+										<div class="card-title">GRATIS DAN BERHADIAH</div>
+										<div class="card-text">
+											Pendaftaran gratis! Ajak keluarga anda dan menangkan
+											hadiah total puluhan juta serta berbagai macam doorprize
+											yang menarik!
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row mx-auto">
+							<div class="col-md-12">
+								<div class="card mt-4 card-custom">
+									<div class="card-body text-white">
+										<div class="card-title">GRATIS DAN BERHADIAH</div>
+										<div class="card-text">
+											Pendaftaran gratis! Ajak keluarga anda dan menangkan
+											hadiah total puluhan juta serta berbagai macam doorprize
+											yang menarik!
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row mx-auto">
+							<div class="col-md-12">
+								<div class="card mt-4 card-custom">
+									<div class="card-body text-white">
+										<div class="row">
+											<div class="col-md-4">
+												<img
+													class="img-fluid"
+													src="resources/images/card-image.png"
+													alt=""
+												/>
+											</div>
+											<div class="col-md-8">
+												<h5 class="card-title fs-1 fw-bold">
+													SPESIAL PERFOMANCE
+												</h5>
+												<p class="card-text">
+													Saksikan penampilan dari RAN, DJ Whisnu Santika, DJ
+													Adnan Veron, serta hiburan lainnya!
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="sponsor-section mt-5">
+			<div class="sponsor">
+				<h3 class="text-center mb-3 text-white fw-bold">DIDUKUNG OLEH</h3>
+				<div class="sponsor-slide">
+					<img src="resources/images/sponsor-1.png" alt="" />
+					<img src="resources/images/sponsor-2.png" alt="" />
+					<img src="resources/images/sponsor-3.png" alt="" />
+					<img src="resources/images/sponsor-4.png" alt="" />
+					<img src="resources/images/sponsor-5.png" alt="" />
+					<img src="resources/images/sponsor-6.png" alt="" />
+					<img src="resources/images/sponsor-7.png" alt="" />
+					<img src="resources/images/sponsor-8.png" alt="" />
+				</div>
+			</div>
+		</section>
+
+		<section class="gallery">
+			<div class="container mt-5">
+				<h1 class="fw-bold text-center">GALLERY SUDIRMAN</h1>
+				<div
+					class="carousel slide mt-4"
+					id="carouselDemo"
+					data-bs-wrap="true"
+					data-bs-ride="carousel"
+				>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="resources/images/gallery-1.png" class="w-100" />
+						</div>
+
+						<div class="carousel-item" data-bs-interval="2000">
+							<img src="resources/images/gallery-2.png" class="w-100" />
+						</div>
+
+						<div class="carousel-item">
+							<img src="resources/images/gallery-3.png" class="w-100" />
+						</div>
+						<div class="carousel-item">
+							<img src="resources/images/gallery-4.png" class="w-100" />
+						</div>
+					</div>
+
+					<button
+						class="carousel-control-prev"
+						type="button"
+						data-bs-target="#carouselDemo"
+						data-bs-slide="prev"
+					>
+						<span class="carousel-control-prev-icon"></span>
+					</button>
+
+					<button
+						class="carousel-control-next"
+						type="button"
+						data-bs-target="#carouselDemo"
+						data-bs-slide="next"
+					>
+						<span class="carousel-control-next-icon"></span>
+					</button>
+					<div class="carousel-indicators mt-5">
+						<button
+							type="button"
+							class="active"
+							data-bs-target="#carouselDemo"
+							data-bs-slide-to="0"
+						>
+							<img src="resources/images/gallery-1.png" />
+						</button>
+
+						<button
+							type="button"
+							data-bs-target="#carouselDemo"
+							data-bs-slide-to="1"
+						>
+							<img src="resources/images/gallery-2.png" />
+						</button>
+
+						<button
+							type="button"
+							data-bs-target="#carouselDemo"
+							data-bs-slide-to="2"
+						>
+							<img src="resources/images/gallery-3.png" />
+						</button>
+						<button
+							type="button"
+							data-bs-target="#carouselDemo"
+							data-bs-slide-to="3"
+						>
+							<img src="resources/images/gallery-4.png" />
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="blank mt-5"></div>
+
+		<section class="artikel">
+			<div class="container">
+				<h1 class="text-center fw-bold">ARTIKEL TERKAIT</h1>
+				<div class="row mt-5 text-center" id="filter-buttons">
+					<div class="col-12">
+						<button class="btn mb-2 me-1 active" data-filter="all">
+							Show all
+						</button>
+						<button class="btn mb-2 mx-1" data-filter="nature">Article</button>
+						<button class="btn mb-2 mx-1" data-filter="cars">Foto</button>
+						<button class="btn mb-2 mx-1" data-filter="people">Video</button>
+					</div>
+				</div>
+				<!-- Filterable Images / Cards Section -->
+				<div class="row mt-4" id="filterable-cards">
+					<div class="col-md-4">
+						<div class="card" data-name="nature">
+							<img src="resources/images/artikel-2.png" alt="img" />
+							<div class="card-body">
+								<h6 class="card-title">
+									Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme
+									Beberkan Prosesnya
+								</h6>
+								<p class="card-text article-date text-secondary">
+									Sabtu, 25 Nov 2023 20:00 WIB
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card" data-name="nature">
+							<img src="resources/images/artikel-3.png" alt="img" />
+							<div class="card-body">
+								<h6 class="card-title">
+									Gokil! Puluhan Ribu Orang Ramaikan Pertamina Eco RunFest 2023
+								</h6>
+								<p class="card-text article-date text-secondary">
+									Minggu, 26 Nov 2023 13:04 WIB
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="card" data-name="cars">
+							<img src="resources/images/foto-1.png" alt="img" />
+							<div class="card-body">
+								<h6 class="card-title">
+									Kelar Lari di CT Arsa Charity Fun Run, 'Recharge' Energi
+									Nonton Maliq & D'essentials
+								</h6>
+								<p class="card-text article-date text-secondary">
+									Sabtu, 18 Nov 2023 17:39 WIB
+								</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-sm-12">
+						<div class="card" data-name="cars">
+							<img src="resources/images/foto-3.png" alt="img" />
+							<div class="card-body">
+								<h6 class="card-title">
+									BTN Jakarta Run 2023 Dorong dan Geliatkan Sport Tourism
+									Jakarta
+								</h6>
+								<p class="card-text article-date text-secondary">
+									Minggu, 12 Nov 2023 11:55 WIB
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="card" data-name="people">
+							<img src="resources/images/video-2.png" alt="img" />
+							<div class="card-body">
+								<h6 class="card-title">
+									Sukses Finish Marathon di Jakarta, Osha Penyandang Autisme
+									Beberkan Prosesnya
+								</h6>
+								<p class="card-text article-date text-secondary">
+									Kamis, 16 Nov 2023 16:34 WIB
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-sm-12">
+						<div class="card" data-name="people">
+							<img src="resources/images/video-3.png" alt="img" />
+							<div class="card-body">
+								<h6 class="card-title">
+									Gokil! Puluhan Ribu Orang Ramaikan Pertamina Eco RunFest 2023
+								</h6>
+								<p class="card-text article-date text-secondary">
+									Minggu, 12 Nov 2023 11:55 WIB
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="my-5 text-center">
+					<a href="" class="fw-bold article-btn">LIHAT LEBIH BANYAK</a>
+				</div>
+			</div>
+		</section>
+
+		<div class="additional-background mt-5">
+			<img class="addit-bg" src="resources/images/bg-2.png" alt="" />
+		</div>
+
+		<section class="footer-section">
+			<div class="container">
+				<footer>
+					<div class="row">
+						<div class="col">
+							<img
+								class="footer-logo"
+								src="resources/images/logo-footer.png"
+								alt=""
+							/>
+						</div>
+					</div>
+					<div class="row mt-5">
+						<div class="col-md-10">
+							<p class="text-white">
+								Event olahraga lari sejauh 10 kilometer yang diselenggarakan
+								oleh Detikhealth secara gratis untuk masyarakat Indonesia. Ajak
+								keluarga dan kerabat anda untuk ikut keseruan Sudirman Run 2023
+								lalu menangkan hadiah utama serta doorprize dengan total puluhan
+								juta rupiah
+							</p>
+						</div>
+						<div class="col-md-2">
+							<p class="text-center">Connect with us</p>
+							<span class="social-media-footer text-center mx-2">
+								<img src="resources/images/facebook.svg" alt="" />
+								<img src="resources/images/twitter.svg" alt="" />
+								<img src="resources/images/instagram.svg" alt="" />
+								<img src="resources/images/linkedin.svg" alt="" />
+								<img src="resources/images/youtube.svg" alt="" />
+							</span>
+						</div>
+					</div>
+					<hr class="text-white" />
+					<span class="text-white"
+						>Copyright &copy; 2023 detikcom. All right reserved</span
+					>
+				</footer>
+			</div>
+		</section>
+
+		<script src="resources/js/script.js"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
