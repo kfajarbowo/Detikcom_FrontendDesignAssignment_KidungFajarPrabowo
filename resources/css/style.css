@@ -1,49 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+html{
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 body {
   overflow-x: hidden;
   min-height: 100vh;
-  /* background-color: gray !important; */
-  /* background: url("../images/test.jpg") no-repeat; */
-  /* background-size: cover; */
   background-position: center;
 }
 .logo-event{
   position: absolute;
-  /* right: 0; */
-  /* bottom: 0px; */
   top: 30%;
   left: 15%;
-  /* bottom: 20px; */
   width: 800px;
 }
 .hero-img{
   width: 100%;
   background-size: cover;
   z-index: 1;
-  /* height: 00px; */
-  /* background-image: url('../images/Hero.png'); */
+
 }
 .header-custom {
   margin-top: 30px;
   margin-left: 15%;
-  /* margin-right: 10%; */
   border-radius: 50px;
   position: fixed;
-  /* top: 0; */
-  /* left: 10; */
-  /* right: 10; */
-  /* margin: auto; */
-  width: 75%;
-  /* max-width: 100em; */
-  padding: 20px 80px;
-  /* background: rgba(255, 255, 255, 0.1); */
-  background: rgba(10, 7, 7, 0.1);
+  width: 70%;
+  padding: 20px 80px; 
+  background: rgba(255, 255, 255, 0.1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -51,6 +41,17 @@ body {
   border-bottom: 2px solid rgba(255, 255, 255, 0.2);
   z-index: 100;
 }
+.btn-registration{
+  padding: 10px 20px;
+  background:linear-gradient(271deg, #59FFB9 0%, #326CFF 100%);
+  border-radius: 20px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: none;
+  color: white !important;
+}
+
+
 .header-custom::before {
   content: "";
   position: absolute;
@@ -79,12 +80,13 @@ body {
 .navbar-custom a {
   color: rgb(14, 13, 13);
   font-size: 18px;
+  font-weight: 500;
   text-decoration: none;
-  margin-left: 35px;
+  margin-left: 45px;
   transition: 0.3s;
 }
 .navbar-custom a:hover {
-  color: #f00;
+  color: #FF9A3C;
 }
 #menu-icon {
   font-size: 36px;
@@ -110,7 +112,7 @@ body {
 .card-custom{
   
   border-radius: 32px !important;
-  /* background-image: linear-gradient( to right, #59FFB9 -30.09%, #326CFF 71.21%); */
+ 
   background: linear-gradient(271deg, #59FFB9 0%, #326CFF 100%);
 
 
@@ -118,8 +120,46 @@ body {
 }
 .card:hover{
   background-position: right center;
-  /* border-image-source: linear-gradient(90deg, #59FFB9 -30.09%, #326CFF 71.21% ); */
-  /* background: linear-gradient(237deg, #59FFB9 -30.09%, #326CFF 71.21%) */
+}
+
+.img-card{
+  overflow: hidden;
+ 
+}
+.img-card img{
+  transition: 0.5s all ease-in-out;
+}
+.img-card:hover img{
+  transform: scale(1.05);
+}
+
+.fun-run-text{
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 900;
+  font-size: 52px;
+  font-style: italic;
+  word-spacing: 5px;
+}
+.prize-text{
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 900;
+  font-size: 35px;
+  font-style: italic;
+  word-spacing: 5px;
+}
+.bazar-text{
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 900;
+  font-size: 40px;
+  font-style: italic;
+  word-spacing: 5px;
+}
+.spesial-perfom-text{
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-weight: 900;
+  font-size: 40px;
+  font-style: italic;
+  word-spacing: 5px;
 }
 
 /* sponsor */
@@ -177,9 +217,10 @@ body {
 }
 
 /* gallery */
+.gallery h1{
+  font-weight: 900;
+}
 .carousel-indicators img{
-  /* display: flex;
-  flex-direction: row; */
   width: 320px;
   display: block;
   margin-top: 15%;
@@ -189,10 +230,6 @@ body {
 }
 .carousel-indicators{
   position: unset;
-  /* display: block; */
-  /* display: flex;
-  flex-direction: row;
-  justify-content: space-between; */
 }
 
 .blank{
@@ -200,6 +237,9 @@ body {
 }
 
 /* artikel */
+.artikel h1{
+  font-weight: 900;
+}
 #filter-buttons button {
   border-radius: 3px;
   background: #fff;
@@ -229,20 +269,20 @@ body {
   box-shadow: 0px 18px 40px 12px rgba(255, 211, 103, 0.35);
 }
 
-.additional-background{
-  /* width: 100%; */
-  /* background-size: cover;
-  z-index: -1;
-  top: 100px; */
+.hover-artikel img{
+  transition: 0.5s all ease-in-out;
 }
+.hover-artikel:hover img{
+  transform: scale(1.05);
+}
+.hover-artikel:hover{
+  color: #FF9A3C;
+}
+
+
 .addit-bg{
   width: 100%;
   margin-top: 5%;
-  /* z-index: -2; */
-  /* margin-top: -60%; */
-  /* position: relative; */
-  /* bottom:50%; */
-  /* height: 500px; */
   background-size: cover;
 }
 
@@ -268,11 +308,10 @@ body {
   }
   .header-custom {
     padding: 1.25rem 4%;
-    /* asli 96 without margin */
     width: 85%;
     margin-left: 6%;
     margin-top: 10%;
-    /* position: sticky; */
+    text-align: center;
   
   }
   .nav-bg{
@@ -292,6 +331,56 @@ body {
     padding: 1.5rem;
     width: fit-content;
   }
+
+  .first-card-about{
+    margin-top: 5%;
+   }
+  .img-spesial-perfom{
+      width: 100%;
+    }
+
+    .fun-run-text{
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-weight: 900;
+      font-size: 55px;
+      font-style: italic;
+      word-spacing: 5px;
+    }
+    .fun-run-text + p{
+      font-size: 15px;
+    }
+    .prize-text{
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-weight: 900;
+      font-size: 20px;
+      font-style: italic;
+      word-spacing: 5px;
+    }
+    .prize-text+ p{
+      font-size: 15px;
+    }
+    .bazar-text{
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-weight: 900;
+      font-size: 22px;
+      font-style: italic;
+      word-spacing: 5px;
+    }
+    .bazar-text + p{
+      font-size: 15px;
+    }
+    .spesial-perfom-text{
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-weight: 900;
+      font-size: 20px;
+      font-style: italic;
+      word-spacing: 5px;
+      margin-top: 12px;
+    }
+    .spesial-perfom-text + p{
+      font-size: 15px;
+    }
+    
   .button-custom{
     padding: 15px 25px;
     background-color: #FFC73C;
@@ -305,11 +394,12 @@ body {
   }
   
   .carousel-indicators img{
-    /* display: flex;
-    flex-direction: row; */
     width: 95px;
     display: block;
     margin-top: 40%;
+  }
+  .gallery h1{
+    font-size: 20px;
   }
   .blank{
     height: 70px;
@@ -330,13 +420,29 @@ body {
   #filterable-cards .article-date {
     font-size: 12px;
   }
+  .artikel h1{
+    font-size: 20px;
+  }
+  .footer-section{
+    height: 500px;
+  }
+  .footer-logo{
+    width: 200px;
+  }
+  footer{
+    text-align: center;
+  }
+  footer p{
+    font-size: 13px;
+    padding: 10px;
+  }
+  .copyright{
+    font-size: 12px;
+  }
  
  
 }
 @media (max-width: 768px) {
-  /* .hero-img{
-    width: 500px;
-  } */
   #menu-icon {
     display: block;
   }
@@ -361,7 +467,7 @@ body {
     top: 50px;
     left: 0;
     width: 85%;
-    height: 350px;
+    height: 380px;
     background: rgba(22, 19, 19, 0.1);
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
